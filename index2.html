@@ -32,10 +32,10 @@
 								<li><a href="">Vacancies</a></li>
 							</ul>
 							<div class="header__languages">
-								<a href="" class="header__language">
+								<a href="index.html" class="header__language">
 									<span>Ru</span>
 								</a>
-								<a href="index2.html" class="header__language language-active">
+								<a href="" class="header__language language-active">
 									<span>En</span>
 								</a>
 							</div>
@@ -777,7 +777,7 @@
 		</main>
 		<footer class="footer">
 			<div class="container">
-				<div class="footer__inner">
+				<div class="footer__inner tabs2">
 					<div class="footer-top">
 						<div class="footer-top__left">
 							<h2 class="footer__title h2">We will contact you shortly!</h2>
@@ -807,7 +807,11 @@
 								</div>
 								<div class="footer__item">
 									<div class="footer__item-title">Phone</div>
-									<a href="tel:+7(495)9256561/62" class="footer__item-text">+7 (495) 925-65-61/62</a>
+									<a data-content-path2="1" href="tel:+7(495)9256561/62"
+										class="footer__item-text tab__content2 tab__content2--active">+7
+										(495) 925-65-61/62</a>
+									<a data-content-path2="2" href="tel:+4312308535" class="footer__item-text tab__content2">+
+										43 1 230 85 35</a>
 								</div>
 							</div>
 						</div>
@@ -816,12 +820,19 @@
 						<div class="footer-bottom__wrap">
 							<div class="footer-bottom__left">
 								<div class="footer__cities">
-									<a class="footer__city footer__city--active" href="">Moscow</a>
-									<a class="footer__city" href="">Vienna</a>
+									<div data-tab-path2="1" class="footer__city tab2 tab2--active footer__city--active">Moscow</div>
+									<div data-tab-path2="2" class="footer__city tab2">Vienna</div>
 								</div>
-								<div class="footer__text">119002, Moscow, Arbat Street, Building 35, 4th floor, Office 453 (Building of
+								<div data-content-path2="1" class="footer__text tab__content2 tab__content2--active">119002, Moscow,
+									Arbat Street, Building 35,
+									4th floor, Office 453 (Building of
 									the Actor's House named after Yablochkina, entrance from Kaloshin Lane, after the checkpoint – turn
-									right to the elevator hall, 4th floor)</div>
+									right to the elevator hall, 4th floor)
+								</div>
+								<div data-content-path2="2" class="footer__text tab__content2">
+									Wagenseilgasse 3, Euro Plaza, Bldg. I, 3 floor
+									1120 Vienna, Austria
+								</div>
 								<div class="footer__socials">
 									<a class="footer__social" href="">
 										<img src="img/social-icon.svg" alt="">

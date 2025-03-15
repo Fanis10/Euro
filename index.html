@@ -32,12 +32,12 @@
                         <li><a href="">Контакты</a></li>
                     </ul>
                     <div class="header__languages">
-                        <div data-tab-path2="1" class="header__language tab2 tab2--active">
+                        <a href="" class="header__language language-active">
                             <span>Ru</span>
-                        </div>
-                        <div data-tab-path2="2" class="header__language tab2">
+                        </a>
+                        <a href="index2.html" class="header__language">
                             <span>En</span>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -783,7 +783,7 @@
 		</main>
 		<footer class="footer">
     <div class="container">
-        <div class="footer__inner">
+        <div class="footer__inner tabs2">
             <div class="footer-top">
                 <div class="footer-top__left">
                     <h2 class="footer__title h2">Мы свяжемся с вами в кратчайшие сроки!</h2>
@@ -815,7 +815,10 @@
                         </div>
                         <div class="footer__item">
                             <div class="footer__item-title">Телефон</div>
-                            <a href="tel:+7(495)9256561/62" class="footer__item-text">+7 (495) 925-65-61/62</a>
+                            <a data-content-path2="1" href="tel:+7(495)9256561/62"
+                                class="footer__item-text tab__content2 tab__content2--active">+7 (495) 925-65-61/62</a>
+                            <a data-content-path2="2" href="tel:+4312308535" class="footer__item-text tab__content2">+
+                                43 1 230 85 35</a>
                         </div>
                     </div>
                 </div>
@@ -827,9 +830,16 @@
                             <div data-tab-path2="1" class="footer__city tab2 tab2--active">Москва</div>
                             <div data-tab-path2="2" class="footer__city tab2">Вена</div>
                         </div>
-                        <div class="footer__text">119002, Москва, улица Арбат, дом 35, 4 этаж, офис 453 (Здание Дома
+                        <div data-content-path2="1" class="footer__text tab__content2 tab__content2--active">119002,
+                            Москва, улица Арбат, дом
+                            35, 4 этаж, офис 453 (Здание Дома
                             актера им. Яблочкиной, вход со стороны Калошина переулка, после вахты – направо в лифтовый
-                            холл, 4-ый этаж)</div>
+                            холл, 4-ый этаж)
+                        </div>
+                        <div data-content-path2="2" class="footer__text tab__content2">
+                            Wagenseilgasse 3, Euro Plaza, Bldg. I, 3 floor
+                            1120 Vienna, Austria
+                        </div>
                         <div class="footer__socials">
                             <a class="footer__social" href="">
                                 <img src="img/social-icon.svg" alt="">
