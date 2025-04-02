@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
 	<title>Новости</title>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036" type="text/javascript"></script>
 </head>
 
 
@@ -18,7 +19,23 @@
         <div class="header__inner">
             <div class="header__wrap">
                 <ul class="header__list">
-                    <li><a href="">О компании</a></li>
+                    <li class="header-item">
+                        <a href="#" class="header-item__show">
+                            <span>О компании</span>
+                            <i>
+                                <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.7098 1.20986C13.6169 1.11613 13.5063 1.04174 13.3844 0.990969C13.2625 0.940201 13.1318 0.914062 12.9998 0.914062C12.8678 0.914062 12.7371 0.940201 12.6152 0.990969C12.4934 1.04174 12.3828 1.11613 12.2898 1.20986L7.70982 5.78986C7.61685 5.88359 7.50625 5.95798 7.38439 6.00875C7.26253 6.05952 7.13183 6.08566 6.99982 6.08566C6.8678 6.08566 6.7371 6.05952 6.61524 6.00875C6.49338 5.95798 6.38278 5.88359 6.28982 5.78986L1.70982 1.20986C1.61685 1.11613 1.50625 1.04174 1.38439 0.990969C1.26253 0.940201 1.13183 0.914062 0.999816 0.914062C0.867804 0.914062 0.737098 0.940201 0.615239 0.990969C0.49338 1.04174 0.382779 1.11613 0.289816 1.20986C0.103565 1.39722 -0.000976562 1.65067 -0.000976562 1.91486C-0.000976562 2.17905 0.103565 2.4325 0.289816 2.61986L4.87982 7.20986C5.44232 7.77166 6.20481 8.08722 6.99982 8.08722C7.79482 8.08722 8.55731 7.77166 9.11982 7.20986L13.7098 2.61986C13.8961 2.4325 14.0006 2.17905 14.0006 1.91486C14.0006 1.65067 13.8961 1.39722 13.7098 1.20986Z" fill="#282827"/>
+                                </svg>
+                            </i>
+                        </a>
+                        <div class="header-item__hidden">
+                            <ul class="header-item__list">
+                                <li><a href="">О компании</a></li>
+                                <li><a href="">О компании</a></li>
+                                <li><a href="">О компании</a></li>
+                            </ul>
+                        </div>
+                    </li>
                     <li><a href="">Услуги</a></li>
                     <li><a href="">Портфолио</a></li>
                 </ul>
@@ -70,7 +87,7 @@
 			</section>
 			<section class="news">
 				<div class="container">
-					<div class="news__inner">
+					<div class="news__inner tabs2">
 						<div class="news__top">
 							<h1 class="news__title h1">Новое и полезное о Стендах</h1>
 							<div class="news__text">
@@ -80,22 +97,22 @@
 						<div class="tags__slider">
 							<div class="swiper mySwiper">
 								<div class="swiper-wrapper">
-									<a href="" class="swiper-slide tag tag--active">
+									<a data-tab-path2="1" href="#" class="swiper-slide tag tab2 tab2--active">
 										<span>Все новости</span>
 									</a>
-									<a href="" class="swiper-slide tag">
+									<a data-tab-path2="2" href="#" class="swiper-slide tag tab2">
 										<span>Бизнесу</span>
 									</a>
-									<a href="" class="swiper-slide tag">
+									<a data-tab-path2="3" href="#" class="swiper-slide tag tab2">
 										<span>Выставочные стенды</span>
 									</a>
-									<a href="" class="swiper-slide tag">
+									<a data-tab-path2="4" href="#" class="swiper-slide tag tab2">
 										<span>Потребителю</span>
 									</a>
-									<a href="" class="swiper-slide tag">
+									<a data-tab-path2="5" href="#" class="swiper-slide tag tab2">
 										<span>Музейные экспозиции</span>
 									</a>
-									<a href="" class="swiper-slide tag">
+									<a data-tab-path2="6" href="#" class="swiper-slide tag tab2">
 										<span>Строительство за рубежом</span>
 									</a>
 								</div>
@@ -116,170 +133,881 @@
 								<img src="img/arrow-right.svg" alt="">
 							</div>
 						</div>
-						<div class="news__cards">
-							<div class="news-card">
-								<a href="" class="news-card__img">
-									<img src="img/news-img.webp" alt="">
-								</a>
-								<div class="news-card__desc">
-									<a href="" class="news-card__text">Новые горизонты музейных экспозиций: уникальные проекты от ЕвроэкспоСтенд</a>
-									<div class="news-card__date">
-										<i>
-											<img src="img/date-icon.svg" alt="">
-										</i>
-										<span>11.02.2025</span>
+						<div data-content-path2="1" class="tab__content2 tab__content2--active">
+							<div class="news__cards">
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">Новые горизонты музейных экспозиций: уникальные проекты от ЕвроэкспоСтенд</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img2.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">Мастер-класс от ЕвроэкспоСтенд: секреты создания захватывающих музейных экспозиций.  Уникальные случаи, когда статья в три строки</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img3.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">Новые горизонты музейных экспозиций: уникальные проекты от ЕвроэкспоСтенд</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img4.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">Новые горизонты музейных экспозиций: уникальные проекты от ЕвроэкспоСтенд</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img5.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">ЕвроэкспоСтенд представляет: искусство в каждом элементе экспозиции</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img6.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">Современные технологии в музейном деле: успешные проекты ЕвроэкспоСтенд</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img7.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">Новые горизонты музейных экспозиций: уникальные проекты от ЕвроэкспоСтенд</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img8.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">Новые горизонты музейных экспозиций: уникальные проекты от ЕвроэкспоСтенд</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img9.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">Новые горизонты музейных экспозиций: уникальные проекты от ЕвроэкспоСтенд</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="news-card">
-								<a href="" class="news-card__img">
-									<img src="img/news-img2.webp" alt="">
+							<a class="show-more" href="">
+								<span>Показать еще 9</span>
+								<i>
+									<img src="img/arrow-bottom.svg" alt="">
+								</i>
+							</a>
+							<div class="pagination">
+								<a class="pagination__prev2" href="">
+									<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.228 12.5L13.168 11.56L10.1146 8.5L13.168 5.44L12.228 4.5L8.22797 8.5L12.228 12.5Z" fill="#333333"/>
+										<path d="M7.83344 12.5L8.77344 11.56L5.7201 8.5L8.77344 5.44L7.83344 4.5L3.83344 8.5L7.83344 12.5Z" fill="#333333"/>
+									</svg>
 								</a>
-								<div class="news-card__desc">
-									<a href="" class="news-card__text">Мастер-класс от ЕвроэкспоСтенд: секреты создания захватывающих музейных экспозиций.  Уникальные случаи, когда статья в три строки</a>
-									<div class="news-card__date">
-										<i>
-											<img src="img/date-icon.svg" alt="">
-										</i>
-										<span>11.02.2025</span>
-									</div>
-								</div>
-							</div>
-							<div class="news-card">
-								<a href="" class="news-card__img">
-									<img src="img/news-img3.webp" alt="">
+								<a class="pagination__prev" href="">
+									<svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4.56 8.5L5.5 7.56L2.44667 4.5L5.5 1.44L4.56 0.5L0.56 4.5L4.56 8.5Z" fill="black"/>
+									</svg>
 								</a>
-								<div class="news-card__desc">
-									<a href="" class="news-card__text">Новые горизонты музейных экспозиций: уникальные проекты от ЕвроэкспоСтенд</a>
-									<div class="news-card__date">
-										<i>
-											<img src="img/date-icon.svg" alt="">
-										</i>
-										<span>11.02.2025</span>
-									</div>
+								<div class="pagination__items">
+									<a class="pagination__item pagination__item--active" href="">1</a>
+									<a class="pagination__item" href="">2</a>
+									<a class="pagination__item" href="">3</a>
+									<a class="pagination__item" href="">...</a>
+									<a class="pagination__item" href="">10</a>
 								</div>
-							</div>
-							<div class="news-card">
-								<a href="" class="news-card__img">
-									<img src="img/news-img4.webp" alt="">
+								<a class="pagination__next" href="">
+									<svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.44 0.5L0.5 1.44L3.55333 4.5L0.5 7.56L1.44 8.5L5.44 4.5L1.44 0.5Z" fill="black"/>
+									</svg>
 								</a>
-								<div class="news-card__desc">
-									<a href="" class="news-card__text">Новые горизонты музейных экспозиций: уникальные проекты от ЕвроэкспоСтенд</a>
-									<div class="news-card__date">
-										<i>
-											<img src="img/date-icon.svg" alt="">
-										</i>
-										<span>11.02.2025</span>
-									</div>
-								</div>
-							</div>
-							<div class="news-card">
-								<a href="" class="news-card__img">
-									<img src="img/news-img5.webp" alt="">
+								<a class="pagination__next2" href="">
+									<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4.77203 4.5L3.83203 5.44L6.88536 8.5L3.83203 11.56L4.77203 12.5L8.77203 8.5L4.77203 4.5Z" fill="black"/>
+										<path d="M9.16656 4.5L8.22656 5.44L11.2799 8.5L8.22656 11.56L9.16656 12.5L13.1666 8.5L9.16656 4.5Z" fill="black"/>
+									</svg>
 								</a>
-								<div class="news-card__desc">
-									<a href="" class="news-card__text">ЕвроэкспоСтенд представляет: искусство в каждом элементе экспозиции</a>
-									<div class="news-card__date">
-										<i>
-											<img src="img/date-icon.svg" alt="">
-										</i>
-										<span>11.02.2025</span>
-									</div>
-								</div>
-							</div>
-							<div class="news-card">
-								<a href="" class="news-card__img">
-									<img src="img/news-img6.webp" alt="">
-								</a>
-								<div class="news-card__desc">
-									<a href="" class="news-card__text">Современные технологии в музейном деле: успешные проекты ЕвроэкспоСтенд</a>
-									<div class="news-card__date">
-										<i>
-											<img src="img/date-icon.svg" alt="">
-										</i>
-										<span>11.02.2025</span>
-									</div>
-								</div>
-							</div>
-							<div class="news-card">
-								<a href="" class="news-card__img">
-									<img src="img/news-img7.webp" alt="">
-								</a>
-								<div class="news-card__desc">
-									<a href="" class="news-card__text">Новые горизонты музейных экспозиций: уникальные проекты от ЕвроэкспоСтенд</a>
-									<div class="news-card__date">
-										<i>
-											<img src="img/date-icon.svg" alt="">
-										</i>
-										<span>11.02.2025</span>
-									</div>
-								</div>
-							</div>
-							<div class="news-card">
-								<a href="" class="news-card__img">
-									<img src="img/news-img8.webp" alt="">
-								</a>
-								<div class="news-card__desc">
-									<a href="" class="news-card__text">Новые горизонты музейных экспозиций: уникальные проекты от ЕвроэкспоСтенд</a>
-									<div class="news-card__date">
-										<i>
-											<img src="img/date-icon.svg" alt="">
-										</i>
-										<span>11.02.2025</span>
-									</div>
-								</div>
-							</div>
-							<div class="news-card">
-								<a href="" class="news-card__img">
-									<img src="img/news-img9.webp" alt="">
-								</a>
-								<div class="news-card__desc">
-									<a href="" class="news-card__text">Новые горизонты музейных экспозиций: уникальные проекты от ЕвроэкспоСтенд</a>
-									<div class="news-card__date">
-										<i>
-											<img src="img/date-icon.svg" alt="">
-										</i>
-										<span>11.02.2025</span>
-									</div>
-								</div>
 							</div>
 						</div>
-						<a class="show-more" href="">
-							<span>Показать еще 9</span>
-							<i>
-								<img src="img/arrow-bottom.svg" alt="">
-							</i>
-						</a>
-						<div class="pagination">
-							<a class="pagination__prev2" href="">
-								<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12.228 12.5L13.168 11.56L10.1146 8.5L13.168 5.44L12.228 4.5L8.22797 8.5L12.228 12.5Z" fill="#333333"/>
-									<path d="M7.83344 12.5L8.77344 11.56L5.7201 8.5L8.77344 5.44L7.83344 4.5L3.83344 8.5L7.83344 12.5Z" fill="#333333"/>
-								</svg>
-							</a>
-							<a class="pagination__prev" href="">
-								<svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M4.56 8.5L5.5 7.56L2.44667 4.5L5.5 1.44L4.56 0.5L0.56 4.5L4.56 8.5Z" fill="black"/>
-								</svg>
-							</a>
-							<div class="pagination__items">
-								<a class="pagination__item pagination__item--active" href="">1</a>
-								<a class="pagination__item" href="">2</a>
-								<a class="pagination__item" href="">3</a>
-								<a class="pagination__item" href="">...</a>
-								<a class="pagination__item" href="">10</a>
+						<div data-content-path2="2" class="tab__content2">
+							<div class="news__cards">
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">Новые горизонты музейных экспозиций: уникальные проекты от ЕвроэкспоСтенд</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img2.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">Мастер-класс от ЕвроэкспоСтенд: секреты создания захватывающих музейных экспозиций.  Уникальные случаи, когда статья в три строки</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img3.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">Новые горизонты музейных экспозиций: уникальные проекты от ЕвроэкспоСтенд</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
 							</div>
-							<a class="pagination__next" href="">
-								<svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M1.44 0.5L0.5 1.44L3.55333 4.5L0.5 7.56L1.44 8.5L5.44 4.5L1.44 0.5Z" fill="black"/>
-								</svg>
+							<a class="show-more" href="">
+								<span>Показать еще 9</span>
+								<i>
+									<img src="img/arrow-bottom.svg" alt="">
+								</i>
 							</a>
-							<a class="pagination__next2" href="">
-								<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M4.77203 4.5L3.83203 5.44L6.88536 8.5L3.83203 11.56L4.77203 12.5L8.77203 8.5L4.77203 4.5Z" fill="black"/>
-									<path d="M9.16656 4.5L8.22656 5.44L11.2799 8.5L8.22656 11.56L9.16656 12.5L13.1666 8.5L9.16656 4.5Z" fill="black"/>
-								</svg>
+							<div class="pagination">
+								<a class="pagination__prev2" href="">
+									<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.228 12.5L13.168 11.56L10.1146 8.5L13.168 5.44L12.228 4.5L8.22797 8.5L12.228 12.5Z" fill="#333333"/>
+										<path d="M7.83344 12.5L8.77344 11.56L5.7201 8.5L8.77344 5.44L7.83344 4.5L3.83344 8.5L7.83344 12.5Z" fill="#333333"/>
+									</svg>
+								</a>
+								<a class="pagination__prev" href="">
+									<svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4.56 8.5L5.5 7.56L2.44667 4.5L5.5 1.44L4.56 0.5L0.56 4.5L4.56 8.5Z" fill="black"/>
+									</svg>
+								</a>
+								<div class="pagination__items">
+									<a class="pagination__item pagination__item--active" href="">1</a>
+									<a class="pagination__item" href="">2</a>
+									<a class="pagination__item" href="">3</a>
+									<a class="pagination__item" href="">...</a>
+									<a class="pagination__item" href="">10</a>
+								</div>
+								<a class="pagination__next" href="">
+									<svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.44 0.5L0.5 1.44L3.55333 4.5L0.5 7.56L1.44 8.5L5.44 4.5L1.44 0.5Z" fill="black"/>
+									</svg>
+								</a>
+								<a class="pagination__next2" href="">
+									<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4.77203 4.5L3.83203 5.44L6.88536 8.5L3.83203 11.56L4.77203 12.5L8.77203 8.5L4.77203 4.5Z" fill="black"/>
+										<path d="M9.16656 4.5L8.22656 5.44L11.2799 8.5L8.22656 11.56L9.16656 12.5L13.1666 8.5L9.16656 4.5Z" fill="black"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div data-content-path2="3" class="tab__content2">
+							<div class="news__cards">
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">Новые горизонты музейных экспозиций: уникальные проекты от ЕвроэкспоСтенд</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img2.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">Мастер-класс от ЕвроэкспоСтенд: секреты создания захватывающих музейных экспозиций.  Уникальные случаи, когда статья в три строки</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img3.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">Новые горизонты музейных экспозиций: уникальные проекты от ЕвроэкспоСтенд</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img4.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">Новые горизонты музейных экспозиций: уникальные проекты от ЕвроэкспоСтенд</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img5.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">ЕвроэкспоСтенд представляет: искусство в каждом элементе экспозиции</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img6.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">Современные технологии в музейном деле: успешные проекты ЕвроэкспоСтенд</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img7.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">Новые горизонты музейных экспозиций: уникальные проекты от ЕвроэкспоСтенд</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img8.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">Новые горизонты музейных экспозиций: уникальные проекты от ЕвроэкспоСтенд</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img9.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">Новые горизонты музейных экспозиций: уникальные проекты от ЕвроэкспоСтенд</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a class="show-more" href="">
+								<span>Показать еще 9</span>
+								<i>
+									<img src="img/arrow-bottom.svg" alt="">
+								</i>
 							</a>
+							<div class="pagination">
+								<a class="pagination__prev2" href="">
+									<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.228 12.5L13.168 11.56L10.1146 8.5L13.168 5.44L12.228 4.5L8.22797 8.5L12.228 12.5Z" fill="#333333"/>
+										<path d="M7.83344 12.5L8.77344 11.56L5.7201 8.5L8.77344 5.44L7.83344 4.5L3.83344 8.5L7.83344 12.5Z" fill="#333333"/>
+									</svg>
+								</a>
+								<a class="pagination__prev" href="">
+									<svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4.56 8.5L5.5 7.56L2.44667 4.5L5.5 1.44L4.56 0.5L0.56 4.5L4.56 8.5Z" fill="black"/>
+									</svg>
+								</a>
+								<div class="pagination__items">
+									<a class="pagination__item pagination__item--active" href="">1</a>
+									<a class="pagination__item" href="">2</a>
+									<a class="pagination__item" href="">3</a>
+									<a class="pagination__item" href="">...</a>
+									<a class="pagination__item" href="">10</a>
+								</div>
+								<a class="pagination__next" href="">
+									<svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.44 0.5L0.5 1.44L3.55333 4.5L0.5 7.56L1.44 8.5L5.44 4.5L1.44 0.5Z" fill="black"/>
+									</svg>
+								</a>
+								<a class="pagination__next2" href="">
+									<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4.77203 4.5L3.83203 5.44L6.88536 8.5L3.83203 11.56L4.77203 12.5L8.77203 8.5L4.77203 4.5Z" fill="black"/>
+										<path d="M9.16656 4.5L8.22656 5.44L11.2799 8.5L8.22656 11.56L9.16656 12.5L13.1666 8.5L9.16656 4.5Z" fill="black"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div data-content-path2="4" class="tab__content2">
+							<div class="news__cards">
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">Новые горизонты музейных экспозиций: уникальные проекты от ЕвроэкспоСтенд</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img2.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">Мастер-класс от ЕвроэкспоСтенд: секреты создания захватывающих музейных экспозиций.  Уникальные случаи, когда статья в три строки</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img3.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">Новые горизонты музейных экспозиций: уникальные проекты от ЕвроэкспоСтенд</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img4.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">Новые горизонты музейных экспозиций: уникальные проекты от ЕвроэкспоСтенд</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img5.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">ЕвроэкспоСтенд представляет: искусство в каждом элементе экспозиции</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img6.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">Современные технологии в музейном деле: успешные проекты ЕвроэкспоСтенд</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a class="show-more" href="">
+								<span>Показать еще 9</span>
+								<i>
+									<img src="img/arrow-bottom.svg" alt="">
+								</i>
+							</a>
+							<div class="pagination">
+								<a class="pagination__prev2" href="">
+									<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.228 12.5L13.168 11.56L10.1146 8.5L13.168 5.44L12.228 4.5L8.22797 8.5L12.228 12.5Z" fill="#333333"/>
+										<path d="M7.83344 12.5L8.77344 11.56L5.7201 8.5L8.77344 5.44L7.83344 4.5L3.83344 8.5L7.83344 12.5Z" fill="#333333"/>
+									</svg>
+								</a>
+								<a class="pagination__prev" href="">
+									<svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4.56 8.5L5.5 7.56L2.44667 4.5L5.5 1.44L4.56 0.5L0.56 4.5L4.56 8.5Z" fill="black"/>
+									</svg>
+								</a>
+								<div class="pagination__items">
+									<a class="pagination__item pagination__item--active" href="">1</a>
+									<a class="pagination__item" href="">2</a>
+									<a class="pagination__item" href="">3</a>
+									<a class="pagination__item" href="">...</a>
+									<a class="pagination__item" href="">10</a>
+								</div>
+								<a class="pagination__next" href="">
+									<svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.44 0.5L0.5 1.44L3.55333 4.5L0.5 7.56L1.44 8.5L5.44 4.5L1.44 0.5Z" fill="black"/>
+									</svg>
+								</a>
+								<a class="pagination__next2" href="">
+									<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4.77203 4.5L3.83203 5.44L6.88536 8.5L3.83203 11.56L4.77203 12.5L8.77203 8.5L4.77203 4.5Z" fill="black"/>
+										<path d="M9.16656 4.5L8.22656 5.44L11.2799 8.5L8.22656 11.56L9.16656 12.5L13.1666 8.5L9.16656 4.5Z" fill="black"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div data-content-path2="5" class="tab__content2">
+							<div class="news__cards">
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">Новые горизонты музейных экспозиций: уникальные проекты от ЕвроэкспоСтенд</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img2.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">Мастер-класс от ЕвроэкспоСтенд: секреты создания захватывающих музейных экспозиций.  Уникальные случаи, когда статья в три строки</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img3.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">Новые горизонты музейных экспозиций: уникальные проекты от ЕвроэкспоСтенд</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img4.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">Новые горизонты музейных экспозиций: уникальные проекты от ЕвроэкспоСтенд</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img5.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">ЕвроэкспоСтенд представляет: искусство в каждом элементе экспозиции</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img6.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">Современные технологии в музейном деле: успешные проекты ЕвроэкспоСтенд</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img7.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">Новые горизонты музейных экспозиций: уникальные проекты от ЕвроэкспоСтенд</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img8.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">Новые горизонты музейных экспозиций: уникальные проекты от ЕвроэкспоСтенд</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img9.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">Новые горизонты музейных экспозиций: уникальные проекты от ЕвроэкспоСтенд</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a class="show-more" href="">
+								<span>Показать еще 9</span>
+								<i>
+									<img src="img/arrow-bottom.svg" alt="">
+								</i>
+							</a>
+							<div class="pagination">
+								<a class="pagination__prev2" href="">
+									<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.228 12.5L13.168 11.56L10.1146 8.5L13.168 5.44L12.228 4.5L8.22797 8.5L12.228 12.5Z" fill="#333333"/>
+										<path d="M7.83344 12.5L8.77344 11.56L5.7201 8.5L8.77344 5.44L7.83344 4.5L3.83344 8.5L7.83344 12.5Z" fill="#333333"/>
+									</svg>
+								</a>
+								<a class="pagination__prev" href="">
+									<svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4.56 8.5L5.5 7.56L2.44667 4.5L5.5 1.44L4.56 0.5L0.56 4.5L4.56 8.5Z" fill="black"/>
+									</svg>
+								</a>
+								<div class="pagination__items">
+									<a class="pagination__item pagination__item--active" href="">1</a>
+									<a class="pagination__item" href="">2</a>
+									<a class="pagination__item" href="">3</a>
+									<a class="pagination__item" href="">...</a>
+									<a class="pagination__item" href="">10</a>
+								</div>
+								<a class="pagination__next" href="">
+									<svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.44 0.5L0.5 1.44L3.55333 4.5L0.5 7.56L1.44 8.5L5.44 4.5L1.44 0.5Z" fill="black"/>
+									</svg>
+								</a>
+								<a class="pagination__next2" href="">
+									<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4.77203 4.5L3.83203 5.44L6.88536 8.5L3.83203 11.56L4.77203 12.5L8.77203 8.5L4.77203 4.5Z" fill="black"/>
+										<path d="M9.16656 4.5L8.22656 5.44L11.2799 8.5L8.22656 11.56L9.16656 12.5L13.1666 8.5L9.16656 4.5Z" fill="black"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div data-content-path2="6" class="tab__content2">
+							<div class="news__cards">
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">Новые горизонты музейных экспозиций: уникальные проекты от ЕвроэкспоСтенд</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img2.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">Мастер-класс от ЕвроэкспоСтенд: секреты создания захватывающих музейных экспозиций.  Уникальные случаи, когда статья в три строки</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img3.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">Новые горизонты музейных экспозиций: уникальные проекты от ЕвроэкспоСтенд</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img4.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">Новые горизонты музейных экспозиций: уникальные проекты от ЕвроэкспоСтенд</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img5.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">ЕвроэкспоСтенд представляет: искусство в каждом элементе экспозиции</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img6.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">Современные технологии в музейном деле: успешные проекты ЕвроэкспоСтенд</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img7.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">Новые горизонты музейных экспозиций: уникальные проекты от ЕвроэкспоСтенд</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img8.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">Новые горизонты музейных экспозиций: уникальные проекты от ЕвроэкспоСтенд</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="" class="news-card__img">
+										<img src="img/news-img9.webp" alt="">
+									</a>
+									<div class="news-card__desc">
+										<a href="" class="news-card__text">Новые горизонты музейных экспозиций: уникальные проекты от ЕвроэкспоСтенд</a>
+										<div class="news-card__date">
+											<i>
+												<img src="img/date-icon.svg" alt="">
+											</i>
+											<span>11.02.2025</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a class="show-more" href="">
+								<span>Показать еще 9</span>
+								<i>
+									<img src="img/arrow-bottom.svg" alt="">
+								</i>
+							</a>
+							<div class="pagination">
+								<a class="pagination__prev2" href="">
+									<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.228 12.5L13.168 11.56L10.1146 8.5L13.168 5.44L12.228 4.5L8.22797 8.5L12.228 12.5Z" fill="#333333"/>
+										<path d="M7.83344 12.5L8.77344 11.56L5.7201 8.5L8.77344 5.44L7.83344 4.5L3.83344 8.5L7.83344 12.5Z" fill="#333333"/>
+									</svg>
+								</a>
+								<a class="pagination__prev" href="">
+									<svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4.56 8.5L5.5 7.56L2.44667 4.5L5.5 1.44L4.56 0.5L0.56 4.5L4.56 8.5Z" fill="black"/>
+									</svg>
+								</a>
+								<div class="pagination__items">
+									<a class="pagination__item pagination__item--active" href="">1</a>
+									<a class="pagination__item" href="">2</a>
+									<a class="pagination__item" href="">3</a>
+									<a class="pagination__item" href="">...</a>
+									<a class="pagination__item" href="">10</a>
+								</div>
+								<a class="pagination__next" href="">
+									<svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.44 0.5L0.5 1.44L3.55333 4.5L0.5 7.56L1.44 8.5L5.44 4.5L1.44 0.5Z" fill="black"/>
+									</svg>
+								</a>
+								<a class="pagination__next2" href="">
+									<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4.77203 4.5L3.83203 5.44L6.88536 8.5L3.83203 11.56L4.77203 12.5L8.77203 8.5L4.77203 4.5Z" fill="black"/>
+										<path d="M9.16656 4.5L8.22656 5.44L11.2799 8.5L8.22656 11.56L9.16656 12.5L13.1666 8.5L9.16656 4.5Z" fill="black"/>
+									</svg>
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -367,18 +1095,20 @@
                             <li><a href="">О компании</a></li>
                             <li><a href="">Услуги</a></li>
                             <li><a href="">Портфолио</a></li>
+                            <li><a href="">Новости</a></li>
                         </ul>
                         <ul class="footer__list">
-                            <li><a href="">Новости</a></li>
                             <li><a href="">Команда</a></li>
                             <li><a href="">Вакансии</a></li>
                             <li><a href="">Контакты</a></li>
+                            <li><a href="">Вопрос-ответ</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="footer__text2">
                     <p>©2025 ЕВРОЭКСПОСТЕНД</p>
                     <p><a href="">Политика конфиденциальности</a></p>
+                    <p><a href="">Собственные мероприятия</a></p>
                 </div>
             </div>
         </div>
